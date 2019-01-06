@@ -1,0 +1,18 @@
+$gutter: 8px;
+
+.menu {
+  a {
+    margin-right: $gutter;
+  }
+}
+
+.main {
+  margin-top: $gutter * 2;
+}
+
+.wrap {
+  width: 640px;
+  margin: 0 auto;
+  padding: $gutter * 4;
+  background-color: white;
+}
