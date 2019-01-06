@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { HashRouter, Route, Link } from 'react-router-dom';
 import CircleDotsConsole from './components/CircleDots/Console';
 
 import s from './App.module.scss';
@@ -9,7 +9,7 @@ import WavingPolygonConsole from './components/WavingPolygon/Console';
 export default class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className={s.wrap}>
           <h1>SVG Practices</h1>
           <div className={s.menu}>
@@ -23,7 +23,7 @@ export default class App extends Component {
             <Route path="/wavingpolygon" component={WavingPolygonConsole} />
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
